@@ -241,7 +241,6 @@ if __name__ == '__main__':
         except:
             continue
 
-
     labDesktopList = []
     fieldDesktopList = []
     for url in speed_urls:
@@ -276,17 +275,17 @@ if __name__ == '__main__':
     dfLabMobile.to_excel(labMobileWriter, sheet_name='results', index=False, header=lab_headers)
     labMobileWriter.save()
 
-    #lab desktop
+    # lab desktop
     labDesktopWriter = pd.ExcelWriter(date + '-lab-desktop-results.xlsx', engine='xlsxwriter')
     dfLabDesktop.to_excel(labDesktopWriter, sheet_name='results', index=False, header=lab_headers)
     labDesktopWriter.save()
 
-    #field mobile
+    # field mobile
     mobileFieldWriter = pd.ExcelWriter(date + '-field-mobile-results.xlsx', engine='xlsxwriter')
     dfFieldMobile.to_excel(mobileFieldWriter, sheet_name='results', index=False, header=field_headers)
     mobileFieldWriter.save()
 
-    #field desktop
+    # field desktop
     fieldDesktopWriter = pd.ExcelWriter(date + '-field-desktop-results.xlsx', engine='xlsxwriter')
     dfFieldDesktop.to_excel(fieldDesktopWriter, sheet_name='results', index=False, header=field_headers)
     fieldDesktopWriter.save()

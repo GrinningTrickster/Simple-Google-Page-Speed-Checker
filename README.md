@@ -32,6 +32,8 @@ The script produces six excel files for the results.
 <br>
 * Lab data for mobile
 <br>
+* Lab data for desktop
+<br>
 <br>
 
 ## Further Information
